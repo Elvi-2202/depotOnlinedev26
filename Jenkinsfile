@@ -21,7 +21,7 @@ pipeline {
 
         stage('Clone Repository') {
             steps {
-                sh 'git branch:'main', url: https://github.com/Elvi-2202/depotOnlinedev26.git'
+                  git branch:'main', url: 'https://github.com/Elvi-2202/depotOnlinedev26.git'
             }
         }
 
