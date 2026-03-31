@@ -1,17 +1,6 @@
 pipeline {
     agent any
     stages {
-        stage('Clean Workspace') {
-            steps {
-                cleanWs()
-            }
-        }
-        stage('Clone Repository') {
-            steps {
-                sh 'pipeline {
-    agent any
-
-    stages {
 
         stage('Clean Workspace') {
             steps {
@@ -27,8 +16,3 @@ pipeline {
 
     }
 }'
-            }
-        }
-
-    }
-}
