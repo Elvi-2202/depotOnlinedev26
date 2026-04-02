@@ -27,10 +27,10 @@ pipeline {
         }
         stage('build image docker') {
             steps {
-                script {
-                  sh 'sudo docker image rm "mynginx"'                    
-                  sh 'docker build -t "mynginx" .'
-                  //sh 'sudo docker image ls'  
+                  script {
+                  //sh 'sudo docker image rm "mynginx:latest"'                    
+                  sh 'docker buildx -t "mynginx" .'
+                  sh 'sudo docker image ls'  
                         }
               }
           }
